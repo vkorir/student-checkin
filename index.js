@@ -24,8 +24,7 @@ app.use(passport.session());
 app.use(bodyParser.json());
 
 // routes
-require("./routes/authRoutes")(app);
-require("./routes/billingRoutes")(app);
+require("./routes/auth")(app);
 
 // Ensure express behaves corrently on production
 if (process.env.NODE_ENV === "production") {
