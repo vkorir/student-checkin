@@ -1,7 +1,7 @@
+// import "../styles/Header.css";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import Payments from "./Payments";
+// import { Link } from "react-router-dom";
 
 class Header extends Component {
   renderContent() {
@@ -9,41 +9,45 @@ class Header extends Component {
       case null:
         return;
       case false:
-        return [
-          <li>
-            <a href="/auth/google">Login With Google</a>
-          </li>
-        ];
+        return (
+          <div class="link feedback">
+            <a href="/auth/google">Login</a>
+          </div>
+        );
       default:
         return [
-          <li key="0">
-            <Payments />
-          </li>,
-          <li key="1">
-            <p style={{ margin: "0 10px" }}>
-              Credits: {this.props.auth.credits}
-            </p>
-          </li>,
-          <li key="2">
+          <div class="link home">
+            <a href="/">Home</a>
+          </div>,
+          <div class="link past">
+            <a href="/">Past Check-In's</a>
+          </div>,
+          <div class="link feedback">
             <a href="/api/logout">Logout</a>
-          </li>
+          </div>
         ];
     }
   }
 
   render() {
     return (
-      <nav>
-        <div className="nav-wrapper">
-          <Link
-            className="left brand-logo"
-            to={this.props.auth ? "/surveys" : "/"}
-          >
-            Surveyor
-          </Link>
-          <ul className="right">{this.renderContent()}</ul>
+      <div className="page-header">
+        <a href="/">
+          <div className="callout ios">
+            <h4>
+              <strong>iOS</strong> DeCal
+            </h4>
+          </div>
+        </a>
+        <div className="header">
+          <div className="title">
+            <h4>
+              CS198-001 <strong>Check In Portal</strong>
+            </h4>
+          </div>
+          <div className="links">{this.renderContent()}</div>
         </div>
-      </nav>
+      </div>
     );
   }
 }

@@ -1,0 +1,13 @@
+.outer-container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    font-size: 20px;
+}

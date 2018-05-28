@@ -1,0 +1,44 @@
+.header-container {
+    border: 1px dotted #ddd;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+li.logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(10, 10, 10, 0.75);
+}
+.nav {
+    height: 100px;
+    max-width: calc(100% - 80px);
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+
+.class-name {
+    font-weight: 100;
+}
+
+.nav-items {
+    font-size: 16px;
+}
+
+/* ul li {
+    float: right;
+} */
+
+ul li a {
+    text-decoration: none;
+}
