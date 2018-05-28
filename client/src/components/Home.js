@@ -8,7 +8,7 @@ class Home extends Component {
       case null:
         return;
       case false:
-        return [<h3>Come back next week!</h3>, <p>The check in is closed</p>];
+        return [<h3 key="0">Come back next week!</h3>, <p key="1">The check in is closed</p>];
       default:
         return (
           <div>

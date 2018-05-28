@@ -10,19 +10,19 @@ class Header extends Component {
         return;
       case false:
         return (
-          <div class="link feedback">
+          <div key="0" className="link feedback">
             <a href="/auth/google">Login</a>
           </div>
         );
       default:
         return [
-          <div class="link home">
+          <div key="1" className="link home">
             <a href="/">Home</a>
           </div>,
-          <div class="link past">
+          <div key="2" className="link past">
             <a href="/">Past Check-In's</a>
           </div>,
-          <div class="link feedback">
+          <div key="3" className="link feedback">
             <a href="/api/logout">Logout</a>
           </div>
         ];
