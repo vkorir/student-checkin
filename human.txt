@@ -1,0 +1,42 @@
+
+// Server
+draw.io
+    - project workflow
+    - app mock ups
+frameworks/tools/packages
+    - node
+    - express
+    - mongoose/mongodb
+    - passport
+    - nodemon
+    - cookie-session
+    - stripe
+    - body-parser
+heroku
+    - dynamic port binding
+    - specify node environment
+    - specify start script
+    
+// Client
+create-react-app
+concurrently
+libraries/frameworks
+    - react
+    - redux
+    - react-redux
+    - react-router-dom
+    - webpack (automatically with CRA)
+    - materialize-css@next
+    - axios
+    - redux thunk
+    - react-stripe-checkout
+
+
+** Api calls to server **
+1. Redux Provider
+2. Redux Reducers
+3. Action Creators
+4. AJAX vs HTTP calls
+
+** Plus **
+- CircleCI
